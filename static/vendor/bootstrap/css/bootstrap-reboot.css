@@ -31,6 +31,11 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  background: linear-gradient(0deg, rgba(29, 48, 42, 0.527), rgba(12, 32, 23, 0.568)), url(/static/img/8f4921bc-b787-4552-8e3c-bd531e0c418d.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {

@@ -8,6 +8,7 @@ body {
   font-size: 20px;
   color: #212529;
   font-family: 'Lora', 'Times New Roman', serif;
+ 
 }
 
 p {
@@ -192,7 +193,7 @@ header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
   padding: 200px 0 150px;
-  color: white;
+  color: rgb(51, 15, 15);
 }
 
 @media only screen and (min-width: 768px) {
@@ -256,7 +257,7 @@ header.masthead .post-heading .meta {
 }
 
 header.masthead .post-heading .meta a {
-  color: #fff;
+  color: #220202;
 }
 
 @media only screen and (min-width: 768px) {
