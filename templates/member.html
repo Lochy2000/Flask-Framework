@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div style="background-color: rgba(240, 248, 255, 0.582);">
+    <div class="row">
+        <div class="col-md-4">
+            <hr>
+            <img src="{{ member.image_source }}" alt=" Profile image for {{ member.name }}">
+            <h2 class="col-md-7" style="font-weight: 800;">{{ member.name }}</h2>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p style="font-size: large; font-weight: 500;">{{member.description}}</p>
+    </div>
+    <hr>
+</div>
+{% endblock %}

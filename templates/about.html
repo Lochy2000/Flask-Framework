@@ -2,9 +2,9 @@
 {% block content %}
 
 
-    <div  style="background-color: rgba(253, 234, 230, 0.61);">
+    <div  class=" featurette col-md-10" style="background-color: rgba(255, 255, 255, 0.692);">
 
-        <div class="row featurette col-md-12" >
+        <div class="row">
             <h2>{{ page_title }}</h2>
             <p style="font-weight: 600;">
                 The formation of the group grew out of a meeting Gandalf had with Thorin in
@@ -25,14 +25,14 @@
 
         {% for member in company %}
 
-        <div class="row featurette" style="background-color: rgba(253, 234, 230, 0.61);">
+        <div class="row featurette" style="background-color: rgba(255, 255, 255, 0.692);">
 
             {% if loop.index % 2 != 0 %}
                 <hr>
                 <div class="col-md-7">
                     <hr>
-                    <h3>{{ loop.index }}.{{ member.name }}</h3>
-                    <p style="font-weight: 600;">{{ member.description }}</p>
+                    <h3 style="font-weight: 800;"> <a href="/about/{{member.url}}"> {{ loop.index }} . {{ member.name }} </a></h3>
+                    <p style="font-weight: 600;"> {{ member.description }} </p>
                 </div>
                 
                 <div class="col-md-5">
@@ -45,7 +45,7 @@
                     <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
                 </div>
                 <div class="col-md-7">
-                    <h3>{{ loop.index }}.{{ member.name }}</h3>
+                    <h3 style="font-weight: 800;"><a href="/about/{{member.url}}">{{ loop.index }}.{{ member.name }} </a></h3>
                     <p style="font-weight: 600;">{{ member.description }}</p>
                 </div>
             
